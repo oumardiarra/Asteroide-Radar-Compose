@@ -8,6 +8,7 @@ junit = "4.13.2"
 ktx = "1.10.1"
 kotlin = "1.9.0"
 runtimeKtx = "2.6.2"
+retrofit = "2.9.0"
 
 [libraries]
 androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
@@ -24,6 +25,10 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-test-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-test-ui-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+[bundles]
+retrofit = ["retrofit", "moshi-converter"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
