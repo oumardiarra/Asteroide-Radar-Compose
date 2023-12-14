@@ -16,7 +16,7 @@ data class AsteroidDetailsDto(
     @Json(name = "absolute_magnitude_h")
     val absoluteMagnitude: Double,
     @Json(name = "close_approach_data")
-    val closeApproachDate: List<CloseApproachDataDto>,
+    val closeApproachData: List<CloseApproachDataDto>,
     @Json(name = "estimated_diameter")
     val estimatedDiameter: EstimatedDiameterDto,
     @Json(name = "miss_distance")

@@ -3,6 +3,9 @@ import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
+    alias(libs.plugins.hilt.android)
+
 }
 
 android {
@@ -69,6 +72,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.bundles.retrofit)
+    implementation(libs.dagger.hilt)
+    kapt(libs.dagger.hilt.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -76,4 +81,7 @@ dependencies {
     androidTestImplementation(libs.androidx.test.junit4)
     debugImplementation(libs.androidx.test.ui.tooling)
     debugImplementation(libs.androidx.test.ui.manifest)
+}
+kapt {
+    correctErrorTypes = true
 }
