@@ -9,7 +9,11 @@ ktx = "1.10.1"
 kotlin = "1.9.0"
 runtimeKtx = "2.6.2"
 retrofit = "2.9.0"
-hilt = "2.44"
+hilt = "2.46"
+room = "2.6.1"
+mockk = "1.13.8"
+threetenabp = "1.4.6"
+truth = "1.2.0"
 
 [libraries]
 androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
@@ -28,8 +32,15 @@ androidx-test-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" 
 androidx-test-ui-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
-dagger-hilt = {group ="com.google.dagger", name ="hilt-android", version.ref="hilt"}
-dagger-hilt-compiler = {group ="com.google.dagger", name ="hilt-compiler", version.ref="hilt"}
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+mockk-agent = { group = "io.mockk", name = "mockk-agent", version.ref = "mockk" }
+jakewharton-threetenabp = { group = "com.jakewharton.threetenabp", name = "threetenabp", version.ref = "threetenabp" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 
 [bundles]
 retrofit = ["retrofit", "moshi-converter"]
